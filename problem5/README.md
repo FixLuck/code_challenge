@@ -24,10 +24,12 @@ It demonstrates how to implement a clean architecture with services, controllers
 - [express-validator]
 - [dotenv]
 - [ts-node-dev]
+
 ---
 
 ## 📂 Project Structure
 
+```bash
 problem5/
 ├── src/
 │ ├── controllers/ # Handle HTTP requests
@@ -39,6 +41,7 @@ problem5/
 ├── package.json
 ├── tsconfig.json
 └── README.md
+```
 
 ---
 
@@ -53,18 +56,30 @@ problem5/
    ```
 
 2. **Install dependencies**
+
+   ```bash
    npm install
+
+   ```
 
 3. **Setup environment variables**
    Create a .env file in the root:
    PORT=3000
 
 4. **Run the server in development**
+
+   ```bash
    npm run dev
 
+   ```
+
 5. **Build for production**
+
+   ```bash
    npm run build
    npm start
+
+   ```
 
 ## API Endpoints
 
