@@ -30,7 +30,6 @@ router.put(
 
 router.get("/", EmployeeController.list);
 router.get("/:id", EmployeeController.get);
-router.put("/:id", EmployeeController.update);
 router.delete("/:id", EmployeeController.delete);
 
 export default router;

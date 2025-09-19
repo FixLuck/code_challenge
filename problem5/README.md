@@ -63,8 +63,11 @@ problem5/
    ```
 
 3. **Setup environment variables**
+
+   ```bash
    Create a .env file in the root:
    PORT=3000
+   ```
 
 4. **Run the server in development**
 
