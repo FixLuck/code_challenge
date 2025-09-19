@@ -4,7 +4,10 @@
 
 This module provides backend APIs support for a **real-time scoreboard** that displays the **Top 10 user scores** on a website.
 
-It ensures: - Scores are updated when a user completes an action. - The scoreboard is live-updated across all clients. - Security measures are in place to prevent unauthorized score manipulation.
+It ensures: 
+- Scores are updated when a user completes an action. 
+- The scoreboard is live-updated across all clients. 
+- Security measures are in place to prevent unauthorized score manipulation.
 
 ## Features
 
@@ -40,7 +43,7 @@ This endpoint is used to increment a user's score after validated action. - URL:
 ```
 
 **Responses** 
-    - Success (200 OK): Returned when score is updated successfully
+- Success (200 OK): Returned when score is updated successfully
 
 ```bash
 {
@@ -48,7 +51,7 @@ This endpoint is used to increment a user's score after validated action. - URL:
 "message": "Score updated successfully."
 }
 ```
-    - Bad Request (400 Bad Request): Returned if the request body is invalid (e.g., score is missing or not a positive integer).
+- Bad Request (400 Bad Request): Returned if the request body is invalid (e.g., score is missing or not a positive integer).
 
 ```bash
 {
@@ -56,7 +59,7 @@ This endpoint is used to increment a user's score after validated action. - URL:
 "message": "Invalid scoreIncrement value."
 }
 ```
-    - Unauthorized (401 Unauthorized): Returned if the JWT is missing, invalid, or expired.
+- Unauthorized (401 Unauthorized): Returned if the JWT is missing, invalid, or expired.
 ```bash
 {
 "success": false,
@@ -68,6 +71,6 @@ This endpoint is used to increment a user's score after validated action. - URL:
 ![Sequence Diagram](sequenceDiagram.png "Sequence Diagram")
 
 **Improvements**
-    - **Rate Limiting**: Implement rate limiting to prevent users from spamming update requests in a short period.
-    - **Scalability**: Use Redis pub/sub for broadcasting updates across multiple app server instances.
+- **Rate Limiting**: Implement rate limiting to prevent users from spamming update requests in a short period.
+- **Scalability**: Use Redis pub/sub for broadcasting updates across multiple app server instances.
 
