@@ -6,7 +6,7 @@ const sumToN3 = (n: number) => {
     return total;
 }
 
-console.log(sumToN3(5)); // Output: 15
+console.log(sumToN3(5));
 
 /**
  * Time Complexity: O(n) -> loop run n times

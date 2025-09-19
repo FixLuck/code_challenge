@@ -5,7 +5,7 @@ const sumToN2 = (n: number): number => {
     return n + sumToN2(n - 1);
 }
 
-console.log(sumToN2(3)); // Output: 15
+console.log(sumToN2(3)); 
 
 /**
  * Time Complexity: O(n) - make n recursive calls
